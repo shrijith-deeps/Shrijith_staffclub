@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  h1, h2, h3, .font-display {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Realistic velvet curtain shading and folds */
+.curtain-velvet-red {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(76, 5, 25, 0.95) 0px,
+      rgba(153, 17, 44, 0.9) 16px,
+      rgba(225, 29, 72, 0.85) 30px,
+      rgba(153, 17, 44, 0.95) 44px,
+      rgba(76, 5, 25, 0.98) 60px
+    ),
+    radial-gradient(ellipse at 50% 30%, #be123c 0%, #4c0519 80%);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7), 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.curtain-velvet-blue {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(10, 25, 60, 0.98) 0px,
+      rgba(30, 58, 138, 0.9) 16px,
+      rgba(37, 99, 235, 0.85) 30px,
+      rgba(30, 58, 138, 0.95) 44px,
+      rgba(10, 25, 60, 0.98) 60px
+    ),
+    radial-gradient(ellipse at 50% 30%, #1e40af 0%, #030712 85%);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.75), 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.curtain-velvet-emerald {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(4, 35, 20, 0.98) 0px,
+      rgba(6, 78, 59, 0.9) 16px,
+      rgba(16, 149, 93, 0.85) 30px,
+      rgba(6, 78, 59, 0.95) 44px,
+      rgba(4, 35, 20, 0.98) 60px
+    ),
+    radial-gradient(ellipse at 50% 30%, #065f46 0%, #022c22 85%);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.75), 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.curtain-velvet-maroon {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(45, 10, 18, 0.98) 0px,
+      rgba(88, 15, 33, 0.9) 16px,
+      rgba(136, 19, 55, 0.85) 30px,
+      rgba(88, 15, 33, 0.95) 44px,
+      rgba(45, 10, 18, 0.98) 60px
+    ),
+    radial-gradient(ellipse at 50% 30%, #881337 0%, #1c050b 85%);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.8), 0 25px 45px rgba(0, 0, 0, 0.85);
+}
+
+/* Golden valance & rope tassel trim */
+.gold-braid {
+  background: linear-gradient(
+    90deg,
+    #b45309 0%,
+    #fbbf24 25%,
+    #fef08a 50%,
+    #d97706 75%,
+    #78350f 100%
+  );
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+/* Stage spotlight effect */
+.stage-spotlight-left {
+  background: radial-gradient(
+    ellipse at 0% 0%,
+    rgba(254, 240, 138, 0.22) 0%,
+    rgba(253, 224, 71, 0.08) 45%,
+    transparent 75%
+  );
+}
+
+.stage-spotlight-right {
+  background: radial-gradient(
+    ellipse at 100% 0%,
+    rgba(254, 240, 138, 0.22) 0%,
+    rgba(253, 224, 71, 0.08) 45%,
+    transparent 75%
+  );
+}
+
+.stage-center-beam {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(254, 249, 195, 0.18) 0%,
+    rgba(217, 119, 6, 0.08) 50%,
+    transparent 75%
+  );
+}
+
+/* Logo pedestal reflection */
+.stage-floor {
+  background: linear-gradient(
+    180deg,
+    #050814 0%,
+    #0b1224 40%,
+    #0f172a 100%
+  );
+  perspective: 1000px;
+}
+
+/* Soft golden aura */
+@keyframes auraPulse {
+  0%, 100% {
+    box-shadow: 0 0 35px rgba(245, 158, 11, 0.45), 0 0 70px rgba(59, 130, 246, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 55px rgba(245, 158, 11, 0.7), 0 0 100px rgba(59, 130, 246, 0.55);
+  }
+}
+
+.revealed-logo-aura {
+  animation: auraPulse 3.5s ease-in-out infinite;
+}
+
